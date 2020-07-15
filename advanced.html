@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title></title>
+
+
+	<style>	
+	p{background-color: #bfbfbf;
+		padding: 15px;}
+	#search{ color: red;
+	
+	font-size:30px;
+	font-family: arial;
+		}
+	
+		div{ padding:40px;
+			font-size: 20px;
+		font-family: arial;
+			line-height: 200%;}
+		
+		label{
+    			display: table-cell;
+    			text-align: left;
+				}
+		@media (min-width:600px) {input {	border-radius: 1px;
+    			border: 1px solid #d9d9d9;
+  			width:380px;
+			height:25px;
+			display: table-cell;
+			margin:20px;
+			font-size: 13px;
+			padding: 1px 8px;
+				}}
+			@media (max-width:599px) {input {	border-radius: 1px;
+    			border: 1px solid #d9d9d9;
+  			width:190px;
+			height:12.5px;
+			display: table-cell;
+			margin:20px;
+			font-size: 13px;
+			padding: 1px 8px;
+				}}
+		input:hover {border-color: blue}
+		div.row{	
+   			 display:table-row;
+			font-size: 13px;
+				}
+		#submit{height:30px;
+			width: 120px; 
+			background-color: #4d90fe;
+			color: white;
+			border:none;			
+    			
+			margin-left:520px;
+			text-align: center;
+			border:1px solid #3079ed
+			border-radius:2px;
+			display: flex;
+                flex-wrap: wrap;
+ }
+			#right{ text-align:right;}
+		button{border-radius: 15px; 
+			padding : 10px;
+			BACKground:none;}
+		button:hover{ background-color:#d9d9d9 ; }
+		</style> 
+	
+   </head>
+
+	
+	
+	
+	    <body>
+
+	<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" width=100></p>
+	<div id="right"><button ><a href = "index.html">
+ Google Search</a></button>	
+	      <label id="search"> Advanced Search</label>
+	<div><br><label>Find pages with...</label></br>
+	<form action="https://google.com/search?">	
+		<div class="row"><label>all these words:</label> 
+			<input name="as_q" type="text"></div>
+		
+		<div class="row"><label>this exact word or phrase:</label>
+			<input name="as_epq" type="text"></div>
+		<div class="row"><label>any of these words:</label>
+			<input name="as_oq" type="text"></div>
+		<div class="row"><label>none of these words:</label>
+			<input name="as_eq" type="text"></div>
+		<input id="submit" type="submit" value="Advanced Search">
+</form>
+			
+  </body>
+
+
+</html>
+
